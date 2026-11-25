@@ -35,3 +35,15 @@ DOMAIN,sdkreport.e.qq.com,REJECT
 DOMAIN,rpt.gdt.qq.com,REJECT
 DOMAIN,xs.gdt.qq.com,REJECT
 DOMAIN,cloud.tgpa.qq.com,REJECT
+
+# 知乎自建程序化广告平台（appkey=38b7d07fabe82 / com.zhihu.ios）
+DOMAIN-SUFFIX,zztfly.com,REJECT
+# 语音广告联盟
+DOMAIN-SUFFIX,voiceads.cn,REJECT
+# 快手广告联盟（知乎接入）
+DOMAIN,open.kuaishouzt.com,REJECT
+
+[Map Local]
+# 知乎 commercial_api 全段兜底，返回空对象
+# 覆盖主模块未处理的 sdk/prefetch、real_time_pull_refresh_v2、real_time_second_floor_v2、ad-style-service
+^https:\/\/api\.zhihu\.com\/commercial_api\/ data-type=text data="{}" header="Content-Type:application/json"
