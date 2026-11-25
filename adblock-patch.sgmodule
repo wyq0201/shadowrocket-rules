@@ -1,0 +1,30 @@
+#!name=去广告补丁
+#!desc=补充 fmz200/wool_scripts blockAds 未覆盖的广告域名（菜鸟裹裹 / 优量汇 / 广点通）
+#!author=wyq0201
+#!homepage=https://github.com/wyq0201/shadowrocket-rules
+#!tg-channel=
+#!system=iOS
+#!category=广告拦截
+#!raw-url=https://raw.githubusercontent.com/wyq0201/shadowrocket-rules/main/adblock-patch.sgmodule
+#!date=2026-11-25
+
+#############################################
+# 与 fmz200/wool_scripts 的 blockAds.srmodule 叠加使用
+# 只补它没覆盖的域名，重复无害（命中第一条即停）
+#############################################
+
+[Rule]
+# 优量汇 / 第三方广告 SDK —— 下发的开屏配置里 show_time=10
+DOMAIN-SUFFIX,iytcdn.com,REJECT
+
+# 广点通竞价成功通知（module 只拦了 mi.gdt.qq.com 等，漏了这个）
+DOMAIN,win.gdt.qq.com,REJECT
+
+# 阿里广告点击上报（module 只拦了 h-adashx.ut.taobao.com，菜鸟的没拦）
+DOMAIN-SUFFIX,h-adashx.ut.cainiao.com,REJECT
+
+# 字节 / 穿山甲前端监控上报
+DOMAIN-SUFFIX,mon.zijieapi.com,REJECT
+
+# 广告曝光监控（单实例域名，只服务广告埋点）
+DOMAIN,admonitor-feedback.cn-hangzhou.log.aliyuncs.com,REJECT
