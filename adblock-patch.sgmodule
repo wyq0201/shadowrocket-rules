@@ -28,3 +28,10 @@ DOMAIN-SUFFIX,mon.zijieapi.com,REJECT
 
 # 广告曝光监控（单实例域名，只服务广告埋点）
 DOMAIN,admonitor-feedback.cn-hangzhou.log.aliyuncs.com,REJECT
+
+# 广点通上报 / 归因链路（虎牙直播、腾讯系 App）
+# 注：素材域名 pgdt.gtimg.cn / adsmind.gdtimg.com 主模块已覆盖，这里只补上报
+DOMAIN,sdkreport.e.qq.com,REJECT
+DOMAIN,rpt.gdt.qq.com,REJECT
+DOMAIN,xs.gdt.qq.com,REJECT
+DOMAIN,cloud.tgpa.qq.com,REJECT
