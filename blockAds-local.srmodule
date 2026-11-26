@@ -22,7 +22,7 @@ DOMAIN-SUFFIX,miaozhen.com,REJECT
 DOMAIN-KEYWORD,-ad-sign.byteimg.com,REJECT
 DOMAIN-KEYWORD,-tos.pstatp.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
-DOMAIN-KEYWORD,pangolin-sdk-toutiao,REJECT
+DOMAIN-KEYWORD,api-access.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,pglstatp-toutiao,REJECT
 DOMAIN-KEYWORD,pangolin.snssdk.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
@@ -1704,7 +1704,7 @@ DOMAIN,gromore.pangolin-sdk-toutiao.com,REJECT
 DOMAIN,ether-pack.pangolin-sdk-toutiao.com,REJECT
 DOMAIN-KEYWORD,-ad-sign.byteimg.com,REJECT
 DOMAIN-KEYWORD,api-access.pangolin-sdk-toutiao,REJECT
-DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
+# [解封-日志上报拦了导致SDK每秒重试80次] DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
@@ -2268,8 +2268,8 @@ DOMAIN,cdn.adapi.fotoable.com,REJECT
 
 # > 皮皮虾
 # 推荐视频不能预览, REJECT
-DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao-b.com,REJECT
-DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao.com,REJECT
+# [解封-日志上报拦了会导致SDK重试风暴] DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao-b.com,REJECT
+# [解封-日志上报拦了会导致SDK重试风暴] DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao.com,REJECT
 DOMAIN-KEYWORD,api-access.pangolin-sdk-toutiao.com,REJECT
 
 # > PPTV
@@ -2404,7 +2404,7 @@ DOMAIN,pangolin.snssdk.com,REJECT
 DOMAIN,gromore.pangolin-sdk-toutiao.com,REJECT
 DOMAIN-KEYWORD,-ad-sign.byteimg.com,REJECT
 # DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT // 被复写替代
-DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
+# [解封-日志上报拦了导致SDK每秒重试80次] DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
@@ -3703,7 +3703,7 @@ DOMAIN-SUFFIX,zhengxiaoliu.top,REJECT
 USER-AGENT,"AVOS*",REJECT
 DOMAIN,appcloud.zhihu.com,REJECT
 DOMAIN,appcloud2.in.zhihu.com,REJECT
-DOMAIN,mqtt.zhihu.com,REJECT
+# [解封-知乎MQTT长连接,非广告] DOMAIN,mqtt.zhihu.com,REJECT
 DOMAIN,sugar.zhihu.com,REJECT
 DOMAIN,crash2.zhihu.com,REJECT
 IP-CIDR,118.89.204.198/32,REJECT,no-resolve
@@ -3711,7 +3711,7 @@ IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
 DOMAIN,appcloud.zhihu.com,REJECT
 DOMAIN,appcloud2.in.zhihu.com,REJECT
 DOMAIN,crash2.zhihu.com,REJECT
-DOMAIN,mqtt.zhihu.com,REJECT
+# [解封-知乎MQTT长连接,非广告] DOMAIN,mqtt.zhihu.com,REJECT
 DOMAIN,sugar.zhihu.com,REJECT
 DOMAIN,zxid-m.mobileservice.cn,REJECT
 IP-CIDR,103.41.167.237/32,REJECT,no-resolve
