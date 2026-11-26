@@ -47,3 +47,10 @@ DOMAIN,open.kuaishouzt.com,REJECT
 # 知乎 commercial_api 全段兜底，返回空对象
 # 覆盖主模块未处理的 sdk/prefetch、real_time_pull_refresh_v2、real_time_second_floor_v2、ad-style-service
 ^https:\/\/api\.zhihu\.com\/commercial_api\/ data-type=text data="{}" header="Content-Type:application/json"
+
+[URL Rewrite]
+# 伪装视频 App（kkdy 系）广告接口 — 精确到路径，业务接口放行
+# 广告: /App/ad/config /App/Ad/activityInfo|skitAdInfo|bannerInfo|barsIndexAdInfo|vajraInfo|noticeInfo|splashInfo
+# 业务: /App/Index/ /App/IndexList/index /App/Resource/ /App/UserInfo/ /domain/check
+^https?:\/\/jk\.7jqb4ae4\.com\/App\/[Aa]d\/ - reject
+^https?:\/\/jk\.7jqb4ae4\.com\/App\/IndexList\/homeFloatAd - reject
