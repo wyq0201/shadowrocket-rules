@@ -1541,16 +1541,16 @@ DOMAIN-SUFFIX,c-nfa.jd.com,REJECT
 DOMAIN-SUFFIX,cm.jd.com,REJECT
 DOMAIN-SUFFIX,jddebug.com,REJECT
 DOMAIN-SUFFIX,policy.jd.com,REJECT
-DOMAIN-SUFFIX,kepler.jd.com,REJECT
+# [暂缓解封] DOMAIN-SUFFIX,kepler.jd.com,REJECT
 DOMAIN-SUFFIX,bdsp.x.jd.com,REJECT
-DOMAIN-SUFFIX,keplerapi.jd.com,REJECT
-DOMAIN-SUFFIX,mapi.m.jd.com,REJECT
+# [暂缓解封] DOMAIN-SUFFIX,keplerapi.jd.com,REJECT
+# [暂缓解封] DOMAIN-SUFFIX,mapi.m.jd.com,REJECT
 DOMAIN-SUFFIX,ad.3.cn,REJECT
 DOMAIN-SUFFIX,jd.c-ptsp.com.cn,REJECT
 # 屏蔽DNS, REJECT
 DOMAIN,dns.jd.com,REJECT
-IP-CIDR,101.124.19.122/32,REJECT,no-resolve
-IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve
+# [暂缓解封] IP-CIDR,101.124.19.122/32,REJECT,no-resolve
+# [暂缓解封] IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve
 
 # > 金立 (Gionee)
 DOMAIN-SUFFIX,pdl.gionee.com,REJECT
