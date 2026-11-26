@@ -35,7 +35,7 @@ DOMAIN-SUFFIX,zlsdk.1rtb.net,REJECT
 DOMAIN-SUFFIX,cdntips.net,REJECT
 DOMAIN-SUFFIX,tfogc.com,REJECT
 AND,((NOT,((DOMAIN,volcengine-kdocs-cache.wpscdn.cn))),(NOT,((DOMAIN,vod-settings.volcvod.com))),(NOT,((DOMAIN,volcengine-kdocs-cache.wpscdn.cn))),(OR,((DOMAIN-KEYWORD,volc)))),REJECT
-DOMAIN-KEYWORD,umeng,REJECT
+# [解封-友盟纯统计SDK,非广告,拦了会重试] DOMAIN-KEYWORD,umeng,REJECT
 DOMAIN-SUFFIX,1a-1791.com,REJECT
 DOMAIN-SUFFIX,rumble.com,REJECT
 # Ad-Stir, REJECT
@@ -3701,16 +3701,16 @@ DOMAIN-SUFFIX,zhengxiaoliu.top,REJECT
 # > 知乎
 # hostname = api.zhihu.com, www.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com, zhuanlan.zhihu.com, link.zhihu.com
 USER-AGENT,"AVOS*",REJECT
-DOMAIN,appcloud.zhihu.com,REJECT
+# [解封-知乎配置下发,非广告] DOMAIN,appcloud.zhihu.com,REJECT
 DOMAIN,appcloud2.in.zhihu.com,REJECT
 # [解封-知乎MQTT长连接,非广告] DOMAIN,mqtt.zhihu.com,REJECT
 DOMAIN,sugar.zhihu.com,REJECT
-DOMAIN,crash2.zhihu.com,REJECT
+# [解封-知乎崩溃上报,非广告] DOMAIN,crash2.zhihu.com,REJECT
 IP-CIDR,118.89.204.198/32,REJECT,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
-DOMAIN,appcloud.zhihu.com,REJECT
+# [解封-知乎配置下发,非广告] DOMAIN,appcloud.zhihu.com,REJECT
 DOMAIN,appcloud2.in.zhihu.com,REJECT
-DOMAIN,crash2.zhihu.com,REJECT
+# [解封-知乎崩溃上报,非广告] DOMAIN,crash2.zhihu.com,REJECT
 # [解封-知乎MQTT长连接,非广告] DOMAIN,mqtt.zhihu.com,REJECT
 DOMAIN,sugar.zhihu.com,REJECT
 DOMAIN,zxid-m.mobileservice.cn,REJECT
