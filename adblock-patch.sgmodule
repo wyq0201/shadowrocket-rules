@@ -52,5 +52,6 @@ DOMAIN,open.kuaishouzt.com,REJECT
 # 伪装视频 App（kkdy 系）广告接口 — 精确到路径，业务接口放行
 # 广告: /App/ad/config /App/Ad/activityInfo|skitAdInfo|bannerInfo|barsIndexAdInfo|vajraInfo|noticeInfo|splashInfo
 # 业务: /App/Index/ /App/IndexList/index /App/Resource/ /App/UserInfo/ /domain/check
-^https?:\/\/jk\.7jqb4ae4\.com\/App\/[Aa]d\/ - reject
-^https?:\/\/jk\.7jqb4ae4\.com\/App\/IndexList\/homeFloatAd - reject
+# jk.<随机串>.com 每次启动轮换，用 [^/]+ 匹配任意 jk 子域，路径保持精确
+^https?:\/\/jk\.[^/]+\/App\/[Aa]d\/ - reject
+^https?:\/\/jk\.[^/]+\/App\/IndexList\/homeFloatAd - reject
