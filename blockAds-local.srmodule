@@ -2490,7 +2490,7 @@ DOMAIN,acs4baichuan.m.taobao.com,REJECT
 DOMAIN,adashxgc.ut.taobao.com,REJECT
 DOMAIN,analytics-api.smzdm.com,REJECT
 DOMAIN,baichuan-sdk.alicdn.com,REJECT
-DOMAIN,dgstatic.jd.com,REJECT
+# [暂缓解封-误伤京东App] DOMAIN,dgstatic.jd.com,REJECT
 DOMAIN,msg.umengcloud.com,REJECT
 DOMAIN,sec.umeng.com,REJECT
 DOMAIN,ulogs.umeng.com,REJECT
