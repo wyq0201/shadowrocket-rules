@@ -8142,7 +8142,7 @@ https://.+\.gamersky.com/v1/statisticAd data-type=text data="{}" header="Content
 
 ^https:\/\/api\.zhihu\.com\/(?:moments\/lastread|drama\/hot-drama-list) data-type=text data="{}" header="Content-Type:application/json"
 
-^https:\/\/api\.zhihu\.com\/root\/window data-type=text data="{}" header="Content-Type:application/json"
+# [解封-运营弹窗,保留限时优惠] ^https:\/\/api\.zhihu\.com\/root\/window data-type=text data="{}" header="Content-Type:application/json"
 
 # 会员页面 - 弹窗、悬浮动图
 ^https:\/\/api\.zhihu\.com\/(?:bazaar\/float_window|market\/popovers_v2) data-type=text data="{}" header="Content-Type:application/json"
